@@ -1,0 +1,28 @@
+.bg-img {
+    background-image: url("./banner.png");
+
+    min-height: 380px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* Needed to position the navbar */
+    position: relative;
+    h1 {
+        margin: 0;
+        color: white;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        font-size: 32px;
+        font-weight: bold;
+      }
+      
+    p {
+        font-size: 20px;
+        color: white;
+        opacity: .7;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+      }
+  }
+  

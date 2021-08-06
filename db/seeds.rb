@@ -9,7 +9,6 @@
 require 'open-uri'
 require 'json'
 
-
 url = 'http://tmdb.lewagon.com/movie/top_rated?api_key=%3Cyour_api_key%3E'
 
 puts "Reseting up database"
@@ -26,7 +25,8 @@ elements = JSON.parse(open("#{url}?page = #{1}").read)['results']
   Movie.create(
     title: elements[i]['title'],
     overview: elements[i]['overview'],
-    rating: elements[i]['vote_average']
+    rating: elements[i]['vote_average'],
+    poster_url: "https://image.tmdb.org/t/p/w500#{elements[i]['poster_path']}",
   )
 end
 

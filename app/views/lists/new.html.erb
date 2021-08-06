@@ -1,0 +1,13 @@
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <h3>Crear lista nueva </h3>
+            <%= simple_form_for @list do |f| %>
+                <%= f.input :name, placeholder: 'Drama' %>
+                <%= f.input :photo %>
+                <%= f.submit class: 'btn btn-flat' %>   
+            <% end %>
+        </div>
+    </div>
+</div>
